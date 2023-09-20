@@ -1,4 +1,4 @@
-# write first command
+# Calculator
 npm i
 
 #For running react-script 
