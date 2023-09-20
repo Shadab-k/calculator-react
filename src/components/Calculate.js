@@ -108,9 +108,9 @@ const Calculate = ({
             id: id
         },
         (res) => {
-            console.log('data', res)
+            // console.log('data', res)
             addToHistory({
-                ...res.data
+                ...res
             })
             setExpression('')
             setId('')

@@ -18,7 +18,7 @@ function App() {
       '/data/get-data',
      '', 
      (res) => {
-      console.log("response", res)
+      // console.log("response", res)
       setCalculationHistory([...res?.data])
     }, 
     (error) => console.log('error:', error))
@@ -26,10 +26,10 @@ function App() {
 
   }, [])
 
-  console.log('history', calculationHistory)
-  console.log(
-    'id', id
-  )
+  // console.log('history', calculationHistory)
+  // console.log(
+  //   'id', id
+  // )
 
   const addToHistory = (item) => {
     setCalculationHistory([...calculationHistory, item]);

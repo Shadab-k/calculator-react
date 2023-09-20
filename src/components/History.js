@@ -24,7 +24,7 @@ const History = ({
 
   const handleDelete = (index) => {
     deleteApiCall('/data/remove-data/',history[index]._id,(res) => {
-      console.log('res', res)
+      // console.log('res', res)
       history.splice(index, 1)
       let temp = [...history]
       setCalculationHistory([...temp])
@@ -50,7 +50,7 @@ const History = ({
   return (
     <div className="history">
       <h2>Your Calculations</h2>
-      <input type="search" placeholder="Search..." name="search" onChange={onChangeSearch} value={search} />
+      <input className="search-box" type="search" placeholder="Search..." name="search" onChange={onChangeSearch} value={search} />
 
       <div className="conatiner">
 
