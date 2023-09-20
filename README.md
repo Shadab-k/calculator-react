@@ -1,6 +1,6 @@
 # Calculator
 
-#Write the below command before starting the react-app
+#Write the given command before starting the react-app
 npm i
 
 
